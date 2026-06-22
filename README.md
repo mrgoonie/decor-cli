@@ -1,6 +1,29 @@
 # decor-cli
 
+[![GitHub release](https://img.shields.io/github/v/release/mrgoonie/decor-cli?display_name=tag)](https://github.com/mrgoonie/decor-cli/releases)
+[![npm](https://img.shields.io/npm/v/decor-cli)](https://www.npmjs.com/package/decor-cli)
+
+![decor-cli technical banner](docs/assets/readme/decor-cli-banner.svg)
+
 `decor-cli` decorates images and videos from a CLI or MCP server. It adds backgrounds, gradients, rounded containers, shadows, padding, crop, alignment, text, arrows, shapes, counters, spotlight, and template presets without distorting the original media ratio.
+
+## How It Works
+
+![How decor-cli works](docs/assets/readme/how-it-works.svg)
+
+## Features
+
+![decor-cli feature map](docs/assets/readme/feature-map.svg)
+
+- Backgrounds: solid colors, gradients, specific image files, random folders, and hosted default backgrounds.
+- Container styling: padding, rounded corners, nine-point alignment, opacity, blur, and drop shadow controls.
+- Input sources: local files, web URLs, Base64 payloads, images, and videos.
+- Crop and composition: crop rectangles, preserve original ratio, and export without distortion.
+- Text: font family, size, color, coordinates, wrap width, outline, shadow, and rounded text boxes.
+- Annotations: curved arrows, rectangles, circles, lines, transparent fills, and numbered counters.
+- Spotlight: brighten a selected region while dimming surrounding context.
+- Templates: reusable named presets for common screenshot and visual styles.
+- Agent-ready surfaces: CLI, MCP server, and companion agent skill.
 
 ## Install
 
@@ -30,6 +53,12 @@ decor render --input-base64 "$DATA_URI" --output output.png
 ```
 
 Private, loopback, link-local, and metadata URL targets are blocked by default. Use `--allow-private-network` only for trusted local fixtures.
+
+## Background Gallery
+
+Run `decor install-backgrounds` on a fresh machine to download this hosted background pack into `~/.decor-cli/backgrounds`.
+
+![Default background gallery](docs/assets/readme/background-gallery.png)
 
 ## Config
 

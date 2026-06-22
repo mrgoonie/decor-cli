@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+  <title id="title">How decor-cli works</title>
+  <desc id="desc">Two workflow rows showing input plus background image or gradient producing an output.</desc>
+  <defs>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <path d="M0 0V10" stroke="#111" stroke-width="1" opacity=".28"/>
+    </pattern>
+    <pattern id="cross" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12L12 0M0 0L12 12" stroke="#111" stroke-width="1" opacity=".18"/>
+    </pattern>
+    <style>
+      .ink{fill:none;stroke:#111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .thin{fill:none;stroke:#111;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:"Bradley Hand","Comic Sans MS",cursive;font-size:42px;fill:#111}
+      .small{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:18px;fill:#111}
+    </style>
+  </defs>
+  <rect width="1500" height="760" fill="#fff"/>
+  <text class="label" x="87" y="68">How it works</text>
+  <g transform="translate(72 150)">
+    <text class="label" x="42" y="-24">Input</text>
+    <rect x="0" y="0" width="270" height="220" rx="4" fill="#fff" stroke="#111" stroke-width="4"/>
+    <rect x="20" y="20" width="230" height="180" fill="url(#hatch)" stroke="#111" stroke-width="2"/>
+    <text class="small" x="42" y="66">screenshot.png</text><text class="small" x="42" y="103">terminal</text>
+    <text class="small" x="42" y="140">browser</text><text class="small" x="42" y="177">video frame</text>
+  </g>
+  <g transform="translate(396 204)">
+    <path class="ink" d="M0 54H82"/><path class="ink" d="M41 14V94"/>
+  </g>
+  <g transform="translate(525 150)">
+    <text class="label" x="62" y="-24">Background Image</text>
+    <rect x="0" y="0" width="410" height="220" fill="#fff" stroke="#111" stroke-width="4"/>
+    <path d="M24 24H386V196H24Z" fill="url(#cross)" stroke="#111" stroke-width="2"/>
+    <path class="thin" d="M52 65C105 29 158 96 206 62S291 43 355 84"/>
+    <path class="thin" d="M59 122C121 91 162 149 233 110S317 105 367 137"/>
+    <text class="small" x="110" y="256">R2 or local folder</text>
+  </g>
+  <g transform="translate(985 204)">
+    <path class="ink" d="M0 54H118"/><path class="ink" d="M86 21L121 54L86 88"/>
+  </g>
+  <g transform="translate(1150 136)">
+    <text class="label" x="88" y="-10">Output</text>
+    <rect x="0" y="0" width="275" height="250" rx="36" fill="#fff" stroke="#111" stroke-width="4"/>
+    <rect x="28" y="30" width="219" height="174" rx="16" fill="#fff" stroke="#111" stroke-width="3"/>
+    <path d="M28 30H247V70H28Z" fill="url(#hatch)"/>
+    <text class="small" x="53" y="108">rounded</text><text class="small" x="53" y="145">shadowed</text>
+    <text class="small" x="53" y="182">annotated</text>
+    <path class="thin" d="M57 221C111 247 191 247 236 216"/>
+  </g>
+  <g transform="translate(72 486)">
+    <text class="label" x="42" y="-24">Input</text>
+    <rect x="0" y="0" width="270" height="220" rx="4" fill="#fff" stroke="#111" stroke-width="4"/>
+    <rect x="20" y="20" width="230" height="180" fill="url(#hatch)" stroke="#111" stroke-width="2"/>
+    <text class="small" x="42" y="86">capture</text><text class="small" x="42" y="128">image</text><text class="small" x="42" y="170">video</text>
+  </g>
+  <g transform="translate(396 540)">
+    <path class="ink" d="M0 54H82"/><path class="ink" d="M41 14V94"/>
+  </g>
+  <g transform="translate(525 486)">
+    <text class="label" x="52" y="-24">Background Gradient</text>
+    <rect x="0" y="0" width="410" height="220" fill="#fff" stroke="#111" stroke-width="4"/>
+    <path d="M24 24L386 24L386 196L24 196Z" fill="url(#hatch)" stroke="#111" stroke-width="2"/>
+    <path class="thin" d="M54 166C136 86 248 222 358 54"/>
+    <path class="thin" d="M65 56C133 136 246 22 360 156"/>
+    <text class="small" x="125" y="256">solid or gradient</text>
+  </g>
+  <g transform="translate(985 540)">
+    <path class="ink" d="M0 54H118"/><path class="ink" d="M86 21L121 54L86 88"/>
+  </g>
+  <g transform="translate(1150 472)">
+    <text class="label" x="88" y="-10">Output</text>
+    <rect x="0" y="0" width="275" height="250" rx="42" fill="#fff" stroke="#111" stroke-width="4"/>
+    <rect x="33" y="36" width="209" height="165" rx="24" fill="#fff" stroke="#111" stroke-width="3"/>
+    <path class="thin" d="M58 83H217M58 120H200M58 157H222"/>
+    <path class="thin" d="M42 217C100 245 191 243 239 206"/>
+  </g>
+</svg>
