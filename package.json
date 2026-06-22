@@ -26,10 +26,12 @@
     "smoke:mcp": "tsx scripts/smoke-mcp.ts",
     "backgrounds:publish": "tsx scripts/publish-default-backgrounds.ts",
     "check:source-labels": "tsx scripts/check-source-artifact-names.ts",
+    "release:assets": "tsx scripts/build-github-release-assets.ts",
     "release:dry-run": "semantic-release --dry-run"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.6",
     "@semantic-release/npm": "^13.1.5",

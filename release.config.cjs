@@ -11,7 +11,14 @@ module.exports = {
     ["@semantic-release/npm", { npmPublish: true, pkgRoot: "packages/core", tarballDir: "dist-releases" }],
     ["@semantic-release/npm", { npmPublish: true, pkgRoot: "packages/cli", tarballDir: "dist-releases" }],
     ["@semantic-release/npm", { npmPublish: true, pkgRoot: "packages/mcp", tarballDir: "dist-releases" }],
-    ["@semantic-release/github", { successComment: false, failComment: false }],
+    ["@semantic-release/exec", { prepareCmd: "npm run release:assets -- ${nextRelease.version}" }],
+    ["@semantic-release/github", {
+      assets: [
+        { path: "dist-github-assets/*.tar.gz", label: "decor-cli runtime archive" }
+      ],
+      successComment: false,
+      failComment: false
+    }],
     ["@semantic-release/git", { assets: ["CHANGELOG.md", "package.json", "packages/*/package.json", "package-lock.json"], message: "build(release): ${nextRelease.version} [skip ci]" }]
   ]
 };

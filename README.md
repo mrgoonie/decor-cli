@@ -100,6 +100,8 @@ Conventional commits drive releases with semantic-release:
 - `main` -> stable GitHub release and npm `latest`
 - `dev` -> beta prerelease and npm `beta`
 
+GitHub releases also include runtime archives named like `decor-cli-vX.Y.Z-linux-amd64.tar.gz` for installers that resolve assets by OS and architecture.
+
 Publish jobs are separated from PR CI and should be protected with the `release` environment. Set the repository `NPM_TOKEN` secret before the first live publish.
 
 ## Default Backgrounds
