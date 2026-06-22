@@ -14,6 +14,7 @@ Video rendering uses system `ffmpeg` and `ffprobe`. Install them with your OS pa
 
 ```bash
 decor render --input screenshot.png --output output.png --template clean-gradient --text "Release notes" --overwrite
+decor render --input screenshot.png --output output.png --background-folder examples/backgrounds --padding 104 --radius 38 --overwrite
 decor render --input demo.mp4 --output demo-decorated.mp4 --padding 96 --radius 36 --overwrite
 decor list-templates
 decor doctor --json
