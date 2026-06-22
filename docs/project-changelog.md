@@ -1,5 +1,11 @@
 # Project Changelog
 
+## 2026-06-22
+
+- Add `decor install-backgrounds` to install hosted default backgrounds into `~/.decor-cli/backgrounds`.
+- Upload the default background pack to Cloudflare R2 bucket `zuey` under `decor-cli/default-backgrounds/`.
+- Add checksum-verified, atomic background downloads and a maintainer publish script for regenerating the manifest.
+
 ## 0.1.0
 
 - Bootstrap TypeScript monorepo.

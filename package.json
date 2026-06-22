@@ -24,6 +24,7 @@
     "smoke:render": "tsx scripts/smoke-render.ts",
     "smoke:cli": "tsx scripts/smoke-cli.ts",
     "smoke:mcp": "tsx scripts/smoke-mcp.ts",
+    "backgrounds:publish": "tsx scripts/publish-default-backgrounds.ts",
     "check:source-labels": "tsx scripts/check-source-artifact-names.ts",
     "release:dry-run": "semantic-release --dry-run"
   },
