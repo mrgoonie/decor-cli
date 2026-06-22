@@ -1,6 +1,6 @@
 {
   "name": "decor-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "CLI for decorating images and videos with backgrounds, templates, and annotations.",
   "type": "module",
   "bin": {
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "commander": "^14.0.0",
-    "decor-cli-core": "0.1.0"
+    "decor-cli-core": "1.0.0"
   },
   "publishConfig": {
     "access": "public",
