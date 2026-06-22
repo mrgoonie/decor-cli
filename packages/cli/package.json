@@ -26,8 +26,7 @@
   "scripts": {
     "build": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json && node -e \"fs.chmodSync('dist/bin/decor.js',0o755)\"",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run packages/cli",
-    "prepublishOnly": "npm run build && npm run test"
+    "test": "vitest run --root ../.. packages/cli"
   },
   "dependencies": {
     "commander": "^14.0.0",

@@ -25,7 +25,7 @@
   "scripts": {
     "build": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json && node -e \"fs.chmodSync('dist/bin/decor-mcp.js',0o755)\"",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run packages/mcp"
+    "test": "vitest run --root ../.. packages/mcp"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.13.2",
