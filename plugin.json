@@ -1,0 +1,10 @@
+{
+  "name": "decor-cli",
+  "version": "0.1.0",
+  "description": "CLI and MCP server for decorating images and videos with templates and annotations.",
+  "author": "Duy Nguyen",
+  "license": "MIT",
+  "category": "media",
+  "keywords": ["cli", "mcp", "image", "video", "screenshot", "annotation"],
+  "skills": ["claude/skills/decor-cli/SKILL.md"]
+}

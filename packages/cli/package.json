@@ -1,0 +1,35 @@
+{
+  "name": "decor-cli",
+  "version": "0.1.0",
+  "description": "CLI for decorating images and videos with backgrounds, templates, and annotations.",
+  "type": "module",
+  "bin": {
+    "decor": "dist/bin/decor.js",
+    "decor-cli": "dist/bin/decor.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/.tsbuildinfo",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json && node -e \"fs.chmodSync('dist/bin/decor.js',0o755)\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run packages/cli",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "decor-cli-core": "0.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
