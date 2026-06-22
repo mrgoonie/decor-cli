@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "decor-cli-core": ["packages/core/src/index.ts"],
+      "decor-cli": ["packages/cli/src/index.ts"],
+      "decor-cli-mcp": ["packages/mcp/src/index.ts"]
+    }
+  }
+}
