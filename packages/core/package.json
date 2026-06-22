@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Shared rendering core for decor-cli.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgoonie/decor-cli",
+    "directory": "packages/core"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {

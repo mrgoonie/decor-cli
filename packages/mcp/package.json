@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "MCP server for decor-cli.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgoonie/decor-cli",
+    "directory": "packages/mcp"
+  },
   "bin": {
     "decor-mcp": "dist/bin/decor-mcp.js"
   },

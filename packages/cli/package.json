@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "CLI for decorating images and videos with backgrounds, templates, and annotations.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgoonie/decor-cli",
+    "directory": "packages/cli"
+  },
   "bin": {
     "decor": "dist/bin/decor.js",
     "decor-cli": "dist/bin/decor.js"

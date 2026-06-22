@@ -4,6 +4,10 @@
   "private": true,
   "description": "CLI and MCP server for decorating images and videos with backgrounds, templates, and annotations.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgoonie/decor-cli"
+  },
   "type": "module",
   "engines": {
     "node": ">=20"
