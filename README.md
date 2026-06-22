@@ -6,6 +6,7 @@
 
 ```bash
 npm install -g decor-cli
+decor install-backgrounds
 ```
 
 Video rendering uses system `ffmpeg` and `ffprobe`. Install them with your OS package manager or set `DECOR_FFMPEG_PATH` and `DECOR_FFPROBE_PATH`.
@@ -14,8 +15,9 @@ Video rendering uses system `ffmpeg` and `ffprobe`. Install them with your OS pa
 
 ```bash
 decor render --input screenshot.png --output output.png --template clean-gradient --text "Release notes" --overwrite
-decor render --input screenshot.png --output output.png --background-folder examples/backgrounds --padding 104 --radius 38 --overwrite
+decor render --input screenshot.png --output output.png --background-folder ~/.decor-cli/backgrounds --padding 104 --radius 38 --overwrite
 decor render --input demo.mp4 --output demo-decorated.mp4 --padding 96 --radius 36 --overwrite
+decor install-backgrounds --dir ./backgrounds
 decor list-templates
 decor doctor --json
 ```
@@ -70,3 +72,7 @@ Conventional commits drive releases with semantic-release:
 - `dev` -> beta prerelease and npm `beta`
 
 Publish jobs are separated from PR CI and should be protected with the `release` environment. Set the repository `NPM_TOKEN` secret before the first live publish.
+
+## Default Backgrounds
+
+`decor install-backgrounds` downloads the hosted default background pack from Cloudflare R2 into `~/.decor-cli/backgrounds`. The installer verifies every file by byte length and SHA-256 before replacing local files. Use `--dir <path>` to install elsewhere and `--force` to redownload files that already match the manifest.

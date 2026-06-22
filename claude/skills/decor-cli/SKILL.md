@@ -17,6 +17,13 @@ Use this skill when an agent needs to create polished visual output from an inpu
 decor render --input screenshot.png --output output.png --template clean-gradient --overwrite
 ```
 
+### Install Default Backgrounds
+
+```bash
+decor install-backgrounds
+decor render --input screenshot.png --output output.png --background-folder ~/.decor-cli/backgrounds --overwrite
+```
+
 ### Add Text or Annotation
 
 ```bash
@@ -42,5 +49,6 @@ Tools: `render_decor`, `preview_decor`, `validate_decor`, `list_templates`, `doc
 ## Notes
 
 - Install system `ffmpeg` and `ffprobe` for video rendering.
+- Run `decor install-backgrounds` on fresh machines to populate `~/.decor-cli/backgrounds`.
 - URL inputs block private networks by default.
 - Prefer JSON config for complex text, arrows, shapes, counters, and spotlight.

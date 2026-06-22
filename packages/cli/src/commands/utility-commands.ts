@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { Command } from "commander";
 import { doctorFfmpeg, listTemplates, loadRenderRequestFromConfig } from "decor-cli-core";
+import { installDefaultBackgrounds } from "../backgrounds/install-default-backgrounds.js";
 import { exitCodeFor, printError, printResult } from "../formatters/output.js";
 
 export function addUtilityCommands(program: Command): void {
@@ -14,6 +15,20 @@ export function addUtilityCommands(program: Command): void {
     .description("Check local dependencies and configuration.")
     .action((_, command) => {
       printResult(doctorFfmpeg(), command.optsWithGlobals());
+    });
+
+  program.command("install-backgrounds")
+    .description("Install default hosted backgrounds into a local folder.")
+    .option("--dir <path>", "install directory, defaults to ~/.decor-cli/backgrounds")
+    .option("--force", "redownload files that already match the manifest")
+    .action(async (options, command) => {
+      const globals = command.optsWithGlobals();
+      try {
+        printResult(await installDefaultBackgrounds({ dir: options.dir, force: Boolean(options.force) }), globals);
+      } catch (error) {
+        printError(error, Boolean(globals.json));
+        process.exitCode = exitCodeFor(error);
+      }
     });
 
   program.command("validate")
