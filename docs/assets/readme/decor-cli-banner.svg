@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
+  <title id="title">decor-cli technical banner</title>
+  <desc id="desc">Monochrome isometric patent-style cutaway showing input, background, decor CLI, and output.</desc>
+  <defs>
+    <pattern id="paper" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#fff"/>
+      <path d="M0 31.5H32M31.5 0V32" stroke="#f1f1f1" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+      <path d="M0 0V12" stroke="#111" stroke-width="1" opacity=".35"/>
+    </pattern>
+    <pattern id="cross" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 14L14 0M-3 3L3 -3M11 17L17 11" stroke="#111" stroke-width="1" opacity=".22"/>
+      <path d="M0 0L14 14M-3 11L3 17M11 -3L17 3" stroke="#111" stroke-width="1" opacity=".16"/>
+    </pattern>
+    <filter id="rough">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.15"/>
+    </filter>
+    <style>
+      .ink{fill:none;stroke:#111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;filter:url(#rough)}
+      .thin{fill:none;stroke:#111;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;filter:url(#rough)}
+      .label{font-family:"Bradley Hand","Comic Sans MS",cursive;font-size:43px;fill:#111}
+      .small{font-family:"Bradley Hand","Comic Sans MS",cursive;font-size:25px;fill:#111}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:20px;fill:#111}
+    </style>
+  </defs>
+  <rect width="1600" height="640" fill="url(#paper)"/>
+  <path class="thin" d="M72 535C294 617 1199 618 1502 538"/>
+  <g transform="translate(88 122)">
+    <text class="label" x="30" y="-32">Input</text>
+    <path class="ink" d="M32 58L262 20L386 92L153 135Z"/>
+    <path class="ink" d="M153 135L386 92L386 322L153 372Z"/>
+    <path class="ink" d="M32 58L153 135L153 372L32 286Z"/>
+    <path d="M64 87L155 142L155 342L64 279Z" fill="url(#hatch)" stroke="#111" stroke-width="3"/>
+    <path d="M181 131L352 101L352 285L181 323Z" fill="#111" opacity=".08" stroke="#111" stroke-width="3"/>
+    <g class="mono">
+      <text x="200" y="152">Usage</text><text x="200" y="185">$ decor render</text>
+      <text x="200" y="220">--input shot.png</text><text x="200" y="255">--output out.png</text>
+    </g>
+  </g>
+  <g transform="translate(555 92)">
+    <text class="label" x="12" y="-2">Background</text>
+    <path class="ink" d="M34 92L290 46L432 132L174 184Z"/>
+    <path d="M75 101L287 64L390 128L176 170Z" fill="url(#cross)" stroke="#111" stroke-width="3"/>
+    <path class="thin" d="M87 125C140 91 166 139 215 104S276 103 330 124"/>
+    <path class="thin" d="M113 148C158 127 187 154 237 128S304 132 353 144"/>
+    <path class="ink" d="M52 248L300 204L428 282L178 332Z"/>
+    <path d="M79 254L298 218L397 279L179 319Z" fill="url(#hatch)" stroke="#111" stroke-width="3"/>
+    <text class="small" x="63" y="384">image, gradient, or random folder</text>
+  </g>
+  <g transform="translate(710 302)">
+    <path class="ink" d="M-182 -20C-116 -14 -76 -5 -23 0"/>
+    <path class="ink" d="M-49 -28L-21 0L-52 25"/>
+    <path class="ink" d="M188 -20C255 -13 310 -5 368 5"/>
+    <path class="ink" d="M335 -24L370 5L335 34"/>
+  </g>
+  <g transform="translate(680 192)">
+    <text class="label" x="35" y="-35">Decor CLI</text>
+    <path class="ink" d="M73 30L296 0L424 74L199 110Z"/>
+    <path class="ink" d="M199 110L424 74L424 272L199 312Z"/>
+    <path class="ink" d="M73 30L199 110L199 312L73 228Z"/>
+    <path d="M105 62L198 119L198 285L105 221Z" fill="url(#hatch)" stroke="#111" stroke-width="3"/>
+    <text class="mono" x="224" y="124">round</text><text class="mono" x="224" y="160">shadow</text>
+    <text class="mono" x="224" y="196">text</text><text class="mono" x="224" y="232">arrows</text>
+    <path class="thin" d="M320 116C361 98 365 163 402 140"/>
+    <path class="thin" d="M394 126L404 140L389 148"/>
+  </g>
+  <g transform="translate(1108 113)">
+    <text class="label" x="150" y="-24">Output</text>
+    <path class="ink" d="M70 85L325 39L455 118L198 171Z"/>
+    <path class="ink" d="M198 171L455 118L455 355L198 411Z"/>
+    <path class="ink" d="M70 85L198 171L198 411L70 320Z"/>
+    <path d="M101 113L198 178L198 379L101 309Z" fill="url(#hatch)" stroke="#111" stroke-width="3"/>
+    <path d="M226 165L420 129L420 315L226 359Z" fill="#fff" stroke="#111" stroke-width="3"/>
+    <path d="M246 180L405 151L405 296L246 331Z" fill="#111" opacity=".1" stroke="#111" stroke-width="2"/>
+    <path class="thin" d="M260 215H386M260 249H372M260 283H398"/>
+    <path class="thin" d="M241 343C274 382 360 383 406 334"/>
+  </g>
+  <rect x="78" y="564" width="1260" height="42" fill="#fff" opacity=".96"/>
+  <text class="small" x="96" y="596">decor-cli turns screenshots, images, and videos into polished shareable outputs from a scriptable command line.</text>
+</svg>
