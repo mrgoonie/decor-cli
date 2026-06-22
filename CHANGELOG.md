@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/mrgoonie/decor-cli/compare/v1.0.1...v1.1.0) (2026-06-22)
+
+### Features
+
+* **cli:** add default background installer ([#4](https://github.com/mrgoonie/decor-cli/issues/4)) ([d2fc9fc](https://github.com/mrgoonie/decor-cli/commit/d2fc9fc2f71f31b10fe8a4b4f21e11c08a16882d))
+
 ## [1.0.1](https://github.com/mrgoonie/decor-cli/compare/v1.0.0...v1.0.1) (2026-06-22)
 
 ### Bug Fixes
