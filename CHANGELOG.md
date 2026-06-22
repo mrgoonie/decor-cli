@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/mrgoonie/decor-cli/compare/v1.1.0...v1.1.1) (2026-06-22)
+
+### Bug Fixes
+
+* **release:** publish runtime archives ([0afc28c](https://github.com/mrgoonie/decor-cli/commit/0afc28c1235a33151b1340c0195a5d887fe1a5fb)), closes [#8](https://github.com/mrgoonie/decor-cli/issues/8)
+
 ## [1.1.0](https://github.com/mrgoonie/decor-cli/compare/v1.0.1...v1.1.0) (2026-06-22)
 
 ### Features
