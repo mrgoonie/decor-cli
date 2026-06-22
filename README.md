@@ -3,17 +3,17 @@
 [![GitHub release](https://img.shields.io/github/v/release/mrgoonie/decor-cli?display_name=tag)](https://github.com/mrgoonie/decor-cli/releases)
 [![npm](https://img.shields.io/npm/v/decor-cli)](https://www.npmjs.com/package/decor-cli)
 
-![decor-cli technical banner](docs/assets/readme/decor-cli-banner.svg)
+![decor-cli technical banner](docs/assets/readme/decor-cli-banner.png)
 
 `decor-cli` decorates images and videos from a CLI or MCP server. It adds backgrounds, gradients, rounded containers, shadows, padding, crop, alignment, text, arrows, shapes, counters, spotlight, and template presets without distorting the original media ratio.
 
 ## How It Works
 
-![How decor-cli works](docs/assets/readme/how-it-works.svg)
+![How decor-cli works](docs/assets/readme/how-it-works.png)
 
 ## Features
 
-![decor-cli feature map](docs/assets/readme/feature-map.svg)
+![decor-cli feature map](docs/assets/readme/feature-map.png)
 
 - Backgrounds: solid colors, gradients, specific image files, random folders, and hosted default backgrounds.
 - Container styling: padding, rounded corners, nine-point alignment, opacity, blur, and drop shadow controls.
